@@ -79,6 +79,13 @@ blockquote {
   height: 80px; }
 
 /**margins**/
+
+.margin-top-20 {
+ margin-top: 20px;}
+ 
+.margin-left-60 {
+  margin-left: 60px;}
+
 .margin-btm-10 {
   margin-bottom: 10px; }
 
