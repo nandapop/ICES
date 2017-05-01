@@ -82,7 +82,10 @@ blockquote {
 
 .margin-top-20 {
  margin-top: 20px;}
- 
+
+ .margin-left-50 {
+  margin-left: 50px;}
+
 .margin-left-60 {
   margin-left: 60px;}
 
@@ -399,6 +402,12 @@ Top bar style
 /* 
     Navbar css
 */
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #043975;
+  background-color: transparent;
+} /* bootstrap */
+
 .navbar-inverse {
   background: url("../images/pattern-2.png") repeat left top scroll;
   border: 0px;
