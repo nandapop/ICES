@@ -18,40 +18,6 @@ angular.module('ices').config(function($urlRouterProvider, $stateProvider) {
 //            controller: "",
 //            controllerAs: "",
         })
-        .state('about.motivation', {
-            url:'/motivation',
-            templateUrl: "templates/about/motivation.html"
-//            controller: "",
-//            controllerAs: "",
-        })
-          .state('about.goal', {
-            url:'/goal',
-            templateUrl: "templates/about/goal.html"
-//            controller: "",
-//            controllerAs: "",
-        })
-        
-        .state('about.organization', {
-        url:'/organization',
-        templateUrl: "templates/about/organization.html"
-//            controller: "",
-//            controllerAs: "",
-        })
-
-        .state("about.directive", {
-        url:'/directive',
-        templateUrl: "templates/about/directive.html"
-//            controller: "",
-//            controllerAs: "",
-        })
-        
-        .state("about.previousDirective", {
-        url:'/previousDirective',
-        templateUrl: "templates/about/previousDirective.html"
-//            controller: "",
-//            controllerAs: "",
-        })
-        
         .state("studyIn", {
             url:'/studyIn',
             templateUrl: "templates/studyInSwiss.html"
