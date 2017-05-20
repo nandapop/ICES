@@ -53,6 +53,10 @@ blockquote {
     font-weight: 600;
     color: #209b60; }
 
+.border-radius-50 {
+  border-radius: 50px;
+  width: 240px;}   
+
 /**spaces**/
 .space10 {
   height: 10px; }
@@ -85,6 +89,10 @@ blockquote {
 
  .margin-left-50 {
   margin-left: 50px;}
+
+  .margin-left-220 {
+  margin-left: 220px;}
+
 
 .margin-left-60 {
   margin-left: 60px;}
