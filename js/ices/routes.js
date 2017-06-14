@@ -25,34 +25,16 @@ angular.module('ices').config(function($urlRouterProvider, $stateProvider) {
 //            controllerAs: "",
         })
 
-        .state("icesCommunity.requirements", {
-            url:'/',
-            templateUrl: "template/icesCommunity/requirements.html"
+        .state("icesCommunity", {
+            url:'/icesCommunity',
+            templateUrl: "templates/requirements.html"
 //            controller: "",
 //            controllerAs: "",
         })
 
-        .state("icesCommunity.benefit", {
-            url:'/',
-            templateUrl: "template/icesCommunity/benefit.html"
-//            controller: "",
-//            controllerAs: "",
-    })
-        .state("icesCommunity.membership", {
-            url:'/',
-            templateUrl: "template/icesCommunity/membership.html"
-//            controller: "",
-//            controllerAs: "",
-})
-        .state("icesCommunity.form", {
-            url:'/',
-            templateUrl: "template/icesCommunity/form.html"
-//            controller: "",
-//            controllerAs: "",
-})
         .state("events", {
             url:'/',
-            templateUrl: "template/events.html"
+            templateUrl: "templates/events.html"
 //            controller: "",
 //            controllerAs: "",
         })
