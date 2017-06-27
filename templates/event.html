@@ -1,7 +1,163 @@
+<script>
+                $(document).ready(function() {
+                $('.event-details').css('display','none');
+                $('.event-details').css('height','auto');
+                $('.event-details').css('margin-top','-17px');
+                $('.event-details > .info').css('height','auto');
+                $('.disabled').prev().css('cursor','default');
+                
+                
+                $('.event-list > li').click(function() {
+                    if (!$(this).nextAll('.event-details').first().hasClass('disabled')) {
+                        //$(this).nextAll('.event-details').first().height('auto');
+                        $(this).nextAll('.event-details').first().nextAll('.info').first().height('auto');
+                        $(this).nextAll('.event-details').first().slideToggle();
+                    }
+                });
+            })
+</script>
 <div class="container">
     <div class="row">
-     
+         <div class="col-md-9 margin-btm-40 margin-top-20">
+            <h3>Eventos ICES</h3>
+                <hr>
+               <div class="container">
+                    <div class="row">
+                        <div class="[ col-xs-12 col-sm-offset-2 col-sm-8 ]">
+                            <ul class="event-list">
+                                <li>
+                                    <time datetime="20-05-2017">
+                                        <span class="day">20</span>
+                                        <span class="month">Mayo</span>
+                                        <span class="year">2017</span>
+                                        <span class="time">ALL DAY</span>
+                                    </time>
+                                    <img alt="Encuentro 2017 ICES en Berna" src="images/imgBerna.jpg" />
+                                    <div class="info">
+                                        <h2 class="title">Encuentro 2017</h2>
+                                        <p class="desc">ICES en Berna</p>
+                                    </div>
+                                    <div class="social">
+                                        <ul>
+                                            <li class="facebook" style="width:33%;"><a href="#facebook"><span class="fa fa-facebook"></span></a></li>
+                                            <li class="twitter" style="width:34%;"><a href="#twitter"><span class="fa fa-twitter"></span></a></li>
+                                            <li class="google-plus" style="width:33%;"><a href="#google-plus"><span class="fa fa-google-plus"></span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="event-details">
+                                    <div class="info" style="height:auto">
+                                        <p class="desc">El evento se llevará a cabo el Sábado 20 de Mayo del 2017 de 09:00 a 17:00 horas en el Casino Kursaal Bern, Kornhausstrasse 3, 3000 Bern.<br> El acceso desde la estación de trenes es posible via el tram Nº 9 (dirección “Bern Wankdorf, Bahnhof“), tarda alrededor de 4 minutos.
+                                        El título del encuentro de este año es “Labour integration of researchers in public and private sectors”, en el programa se puede encontrar mayor información.<br>
+                                        Formulario de registro<br>
+                                        Si tiene alguna pregunta, nos puede contactar a través del correo electrónico: meeting2017@ices-net.ch.<br>
+                                        Valor del registro (incluyendo la membresía anual ICES):<br>
+                                        Estudiantes	 25.- CHF<br>
+                                        Profesionales	 50.- CHF<br>   
+                                        Saludos cordiales,<br>
+                                        Directiva ICES
+                                        www.ices-net.ch
+                                        </p>    
+                                    </div>
+                                    <li>
+                                    <time datetime="07-05-2016">
+                                        <span class="day">07</span>
+                                        <span class="month">Mayo</span>
+                                        <span class="year">2016</span>
+                                        <span class="time">ALL DAY</span>
+                                    </time>
+                                    <img alt="Encuentro 2016 ICES en Ginebra" src="images/imgGinebra.jpg" />
+                                    <div class="info">
+                                        <h2 class="title">Encuentro 2016</h2>
+                                        <p class="desc">ICES en Ginebra</p>
+                                    </div>
+                                    <div class="social">
+                                        <ul>
+                                            <li class="facebook" style="width:33%;"><a href="#facebook"><span class="fa fa-facebook"></span></a></li>
+                                            <li class="twitter" style="width:34%;"><a href="#twitter"><span class="fa fa-twitter"></span></a></li>
+                                            <li class="google-plus" style="width:33%;"><a href="#google-plus"><span class="fa fa-google-plus"></span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="event-details">
+                                    <div class="info" style="height:auto">
+                                        <p class="desc">It’s our pleasure to invite you to the second meeting of Chilean Researchers in Switzerland (ICES).<br> The event will take place on Saturday May 7, 2016 from 10:00 to 19:30 at the University of Geneva (Uni Mail, Room M R280)<br>.This year, the meeting will be held under the title “Science in Chile, a vision from Switzerland”.  The main speakers of our event will be: 
+                                         <table class="table desc">
+                                                <thead>
+                                                <tr>
+                                                    <th><img src="images/andres-couve.jpg" class="imgEvent"></th>
+                                                    <th><img src="images/alejandra-mizala.jpg" class="imgEvent"></th>
+                                                    <th><img src="images/rodrigo-palma.jpg" class="imgEvent" width="250px"></th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Prof. Andrés Couve, Director of the Biomedical Neuroscience Institute (BNI) at the University of Chile,</td>
+                                                        <td>Prof. Alejandra Mizala, Director of the Center for Advanced Research in Education (CIAE) at the University of Chile</td>
+                                                        <td>Prof. Rodrigo Palma, Director of the Solar Energy Research Center (SERC-Chile)</td>
+                                                    </tr>
+                                                    
+                                                    
+                                                    </tbody>
+                                            
+                                            </table></p>
+                                        <p class="desc">
+                                        Additionally, the event will count with the special participation from the NCCR PlanetS research team from University of Geneva.<br>
+                                        The event will be followed by a round table where the speakers will analyze the research link between Switzerland and Chile.<br>
+                                        If you are a Chilean researcher currently working in Switzerland, you have the possibility of presenting a poster of your research project. If you are interested in doing so, please sign on through our registration form to get a space for your poster.<br>
+                                        At the end of the day, we will hold our Annual General Assembly. This part of the program will be held in Spanish. After the meeting, we would like to have dinner together at a restaurant (at your own expense). All assistants to the meeting are very welcome to join us.
+                                        We kindly request you to confirm your attendance before Saturday April 30, 2016 by clicking the following link<br>
+                                        Register here !<br>
 
-     
-    </div>
+                                        More details on this activity will be forthcoming in the near future. Save the date now!<br>
+                                        Would you like to become a member of ICES or renew your membership? Click here!<br>
+                                        Please remember that an early renewal of your 2016 membership is important and will help us to complete the financial resources for the event.<br>
+                                        If you have further questions, please contact us at: meeting2016@ices-net.ch.<br>
+                                        Best regards,
+                                        ICES Board  </p> 
+                                    </div>
+                                </li>
+                                  <li>
+                                    <time datetime="23-05-2015">
+                                        <span class="day">23</span>
+                                        <span class="month">Mayo</span>
+                                        <span class="year">2015</span>
+                                        <span class="time">ALL DAY</span>
+                                    </time>
+                                    <img alt="Encuentro 2015 ICES en Zürich" src="images/imgZurich.jpg" />
+                                    <div class="info">
+                                        <h2 class="title">Encuentro 2015</h2>
+                                        <p class="desc">ICES en Zürich</p>
+                                    </div>
+                                    <div class="social">
+                                        <ul>
+                                            <li class="facebook" style="width:33%;"><a href="#facebook"><span class="fa fa-facebook"></span></a></li>
+                                            <li class="twitter" style="width:34%;"><a href="#twitter"><span class="fa fa-twitter"></span></a></li>
+                                            <li class="google-plus" style="width:33%;"><a href="#google-plus"><span class="fa fa-google-plus"></span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="event-details">
+                                    <div class="info" style="height:auto">
+                                        <p class="desc">Primer encuentro de investigadores chilenos en Suiza.<br>
+                                                Ver Programa Completo (versión 05/05/2015)<br>
+                                                Las actividades del día incluyen:<br>
+                                                SEMINARIO <br>
+                                                Modelos I + D + i  ¿Qué lugar ocupan los investigadores?<br> El ejemplo suizo y cómo avanzar hacia un modelo chileno
+                                                MESA REDONDA<br>
+                                                Relación academia/sociedad: Vinculación con la comunidad y colaboración con la industria
+                                                SESIÓN DE POSTERS<br>
+                                                Miembros ICES<br>
+                                                Confirma tu participación enviando un correo electrónico a contacto@ices-net.ch
+                                        </p>    
+                                    </div>
+                                    </li>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+	            </div>
+ 
+        </div>
+    </div>    
 </div>

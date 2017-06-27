@@ -114,6 +114,9 @@ blockquote {
 
 .margin-btm-50 {
   margin-bottom: 50px; }
+.imgEvent {
+  height: 300px;
+}
 
 /**preloader**/
 .js div#preloader {
