@@ -22,7 +22,7 @@
 		display: inline-block;
 		width: 100%;
 		color: rgb(255, 255, 255);
-		background-color: rgb(197, 44, 102);
+		background-color: #0453a9;
 		padding: 5px;
 		text-align: center;
 		text-transform: uppercase;
@@ -59,7 +59,7 @@
 	}
 	.event-list > li > .info > .desc {
 		font-size: 1.3rem;/* */
-		font-weight: 300;
+		/*font-weight: 300;*/
 		margin: 0px;
 	}
 	.event-list > li > .info > ul,
