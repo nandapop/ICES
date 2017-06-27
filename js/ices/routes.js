@@ -33,8 +33,8 @@ angular.module('ices').config(function($urlRouterProvider, $stateProvider) {
         })
 
         .state("events", {
-            url:'/',
-            templateUrl: "templates/events.html"
+            url:'/events',
+            templateUrl: "templates/event.html"
 //            controller: "",
 //            controllerAs: "",
         })
