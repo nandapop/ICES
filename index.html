@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="ices">
+<html ng-app="ices" ng-controller="settings as settingsCtrl">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,10 +37,16 @@
                     </div>
                         <!--<img src="../images/flags.png" class="flag flag-cl" alt="Chile" />-->
                     <div class="col-sm-6 text-right">
-                        <span><a href="#">Español</a></span>
-                        <span><a href="#">Inglés</a> </span>
-
-
+                        <span>
+                            <a href="" ng-click="settingsCtrl.changeLang('es')">
+                                Español
+                            </a>
+                        </span>
+                        <span>
+                            <a href="" ng-click="settingsCtrl.changeLang('en')">
+                                Inglés
+                            </a>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -96,6 +102,8 @@
                 </div><!--/.nav-collapse -->
             </div><!--/.container -->
         </nav><!--/nav end -->
+        <h1>{{ 'TITLE' | translate }}</h1>
+        <p>{{ 'FOO' | translate }}</p>
         <!--content ui view -->
         <ui-view></ui-view>
         <!--footer start-->
@@ -194,8 +202,11 @@
         <!-- angular (TODO: include other deps from cdn too...) -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
         <script src="https://unpkg.com/angular-ui-router@0.4.2/release/angular-ui-router.min.js"></script>
+        <script src="https://cdn.rawgit.com/angular-translate/bower-angular-translate/2.15.2/angular-translate.js"></script>
         <!-- ices -->
         <script src="js/ices/ices.js"></script>
         <script src="js/ices/routes.js"></script>
+        <script src="js/ices/translate.js"></script>
+        <script src="js/ices/settings.js"></script>
     </body>
 </html>

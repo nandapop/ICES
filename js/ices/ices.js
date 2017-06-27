@@ -1,5 +1,6 @@
 'use strict';
 
 angular.module('ices', [
-    'ui.router'
+    'ui.router',
+    'pascalprecht.translate'
 ]);
