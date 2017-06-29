@@ -10,10 +10,6 @@
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/animate.css" rel="stylesheet">
         <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-        <link href="owl-carousel/owl.carousel.css" rel="stylesheet">
-        <link href="owl-carousel/owl.theme.css" rel="stylesheet">
-        <link href="owl-carousel/owl.transitions.css" rel="stylesheet">
-        <link href="flexslider/flexslider.css" rel="stylesheet">
         <!--Revolution slider css-->
         <link href="rs-plugin/css/settings.css" rel="stylesheet" type="text/css" media="screen">
         <link href="css/style.css" rel="stylesheet">
@@ -27,30 +23,6 @@
         <![endif]-->
     </head>
     <body>
-        <div class="top-bar gray"> <!--era top-bar dark, cambie por gray-->
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 hidden-xs">
-                        <!--<span><i class="fa fa-phone"></i> 01 185-565-658</span>-->
-                        <span><i class="fa fa-envelope"></i> contacto@ices-net.ch</span>
-                        <span><a href="apply.html" class="apply"><i class="fa fa-pencil"></i> Registrarse</a></span>
-                    </div>
-                        <!--<img src="../images/flags.png" class="flag flag-cl" alt="Chile" />-->
-                    <div class="col-sm-6 text-right">
-                        <span>
-                            <a href="" ng-click="settingsCtrl.changeLang('es')">
-                                Español
-                            </a>
-                        </span>
-                        <span>
-                            <a href="" ng-click="settingsCtrl.changeLang('en')">
-                                Inglés
-                            </a>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- Static navbar -->
         <nav class="navbar navbar-inverse navbar-static-top yamm">
             <div class="container">
@@ -61,36 +33,49 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a ui-sref="main">Home<img src="images/ices-logo-top2.png" alt=""></a>
+                    <a ui-sref="main"><img src="images/ices-logo-top2.png" alt="" class="margin-top-20"></a>
+                           
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
+                    <div class="row margin-top-20">
+                            <div class="text-align-right">
+                                <span>
+                                    <button type="button" class="btn btn-success" ng-click="settingsCtrl.changeLang('es')">Español
+                                    </button>
+                                </span>
+                                <span>
+                                    <button type="button" class="btn btn-success" ng-click="settingsCtrl.changeLang('en')">English
+                                    </button>
+                                </span>
+                            </div>
+                    </div> 
                     <ul class="nav navbar-nav navbar-right">
-                        <li><li><a ui-sref="main">Home</a></li></li>
+                        <li><li><a ui-sref="main">{{'MENU_HOME' | translate}}</a></li></li>
                         <li class="dropdown">
-                            <a ui-sref="about" class="dropdown-toggle js-activated" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Quienes somos? <span class="caret"></span></a>
+                            <a ui-sref="about" class="dropdown-toggle js-activated" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{'MENU_ABOUT' | translate}}<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#!/about#motivation">Motivation</a></li>
-                                <li><a href="#!/about#goal">Objetivos de la asociación</a></li>
-                                <li><a href="#!/about#organization">Organización</a></li>
-                                <li><a href="#!/about#directive">Directiva</a></li>
-                                <li><a href="#!/about#previousDirective">Directiva 2015-2016</a></li>
+                                <li><a href="#!/about#motivation">{{'MENU_MOTIVATION' | translate}}</a></li>
+                                <li><a href="#!/about#goal">{{'MENU_GOAL'| translate}}</a></li>
+                                <li><a href="#!/about#organization">{{'MENU_ORG'| translate}}</a></li>
+                                <li><a href="#!/about#directive">{{'MENU_DIRECTIVE' | translate}}</a></li>
+                                <li><a href="#!/about#previousDirective">{{'MENU_EXDIRECTIVE' |translate}}</a></li>
                             </ul>
                             </li>
-                        <li><a ui-sref="studyIn">Estudia en Suiza</a></li>
+                        <li><a ui-sref="studyIn">{{'MENU_STUDY'  | translate}}</a></li>
 
                         <li class="dropdown">
-                            <a ui-sref="icesCommunity" class="dropdown-toggle js-activated" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Comunidad ICES <span class="caret"></span></a>
+                            <a ui-sref="icesCommunity" class="dropdown-toggle js-activated" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{'MENU_ICES' | translate}}<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#!/icesCommunity#requirements">Requisitos</a></li>
-                                <li><a href="#!/icesCommunity#benefit">Beneficios de ser miembros</a></li>
-                                <li><a href="#!/icesCommunity#membership">Membresía anual</a></li>
-                                <li><a href="#!/icesCommunity#form">Formulario de registro</a></li>
+                                <li><a href="#!/icesCommunity#requirements">{{'MENU_REQUIRIMENTS' |translate}}</a></li>
+                                <li><a href="#!/icesCommunity#benefit">{{'MENU_BENEFITS' |translate}}</a></li>
+                                <li><a href="#!/icesCommunity#membership">{{'MENU_MEMBERSHIP' |translate}}</a></li>
+                                <li><a href="#!/icesCommunity#form">{{'MENU_SIGN_IN' |translate}}</a></li>
                             </ul>
                         </li>
-                        <li><a ui-sref="events">Eventos</a></li>
-                        <li><a href="#">Noticias</a></li>
-                        <li><a href="#">Fotos</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a ui-sref="events">{{'MENU_EVENT' | translate}}</a></li>
+                        <li><a href="#">{{'MENU_NEWS' | translate}}</a></li>
+                        <li><a href="#">{{'MENU_PHOTO' | translate}}</a></li>
+                        <li><a href="#">{{'MENU_CONTACT' | translate}}</a></li>
                         <li class="search-toggle"><a href="javascript:void(0)"><i class="fa fa-search"></i></a>
                             <form class="search-form">
                                 <input type="text" class="form-control" placeholder="Search here...">
@@ -102,8 +87,6 @@
                 </div><!--/.nav-collapse -->
             </div><!--/.container -->
         </nav><!--/nav end -->
-        <h1>{{ 'TITLE' | translate }}</h1>
-        <p>{{ 'FOO' | translate }}</p>
         <!--content ui view -->
         <ui-view></ui-view>
         <!--footer start-->
@@ -113,75 +96,42 @@
                     <div class="col-md-3 margin-btm-30">
                         <h3>Site Map</h3>
                         <ul class="list-unstyled f-list">
-                            <li><a ui-sref="main">Home</a></li>
-                            <li><a ui-sref="about">About</a></li>
-                            <li><a ui-sref="about.motivation">Motivation</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#">Photos</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a ui-sref="main">{{'MENU_HOME' | translate}}</a></li>
+                            <li><a ui-sref="about">{{'MENU_ABOUT' | translate}}</a></li>
+                            <li><a href="#!/about#motivation">{{'MENU_MOTIVATION' | translate}}</a></li>
+                            <li><a href="#!/about#goal">{{'MENU_GOAL'| translate}}</a></li>           <li><a href="#!/about#organization">{{'MENU_ORG'| translate}}</a></li>
+                            <li><a href="#!/about#directive">{{'MENU_DIRECTIVE' | translate}}</a></li>
+                            <li><a href="#!/about#previousDirective">{{'MENU_EXDIRECTIVE' |translate}}</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-3 margin-btm-30">
-                        <h3>ICES Community</h3>
+                    <div class="col-md-3 margin-btm-30 margin-top-37">
                         <ul class="list-unstyled f-list">
-                            <li><a href="#">ICES Community</a></li>
-                            <li><a href="#">Login</a></li>
-                            <li><a href="#">Requirements</a></li>
-                            <li><a href="#">Benefits of being a member</a></li>
-                            <li><a href="#">Anual Membership</a></li>
-                            <li><a href="#">Sign in form</a></li>
+                            <li><a ui-sref="studyIn">{{'MENU_STUDY'  | translate}}</a></li>
+                            <li><a ui-sref="icesCommunity">{{'MENU_ICES' | translate}}</a></li>
+                            <li><a href="#!/icesCommunity#requirements">{{'MENU_REQUIRIMENTS' |translate}}</a></li>
+                            <li><a href="#!/icesCommunity#benefit">{{'MENU_BENEFITS' |translate}}</a></li>
+                            <li><a href="#!/icesCommunity#membership">{{'MENU_MEMBERSHIP' |translate}}</a></li>
+                            <li><a href="#!/icesCommunity#form">{{'MENU_SIGN_IN' |translate}}</a></li>
                         </ul>
-                    </div>
-                    <div class="col-md-3 margin-btm-30">
-                        <h3>Recent Post</h3>
-                        <ul class="list-unstyled f-post">
-                            <li class="clearfix">
-                                <a href="#" class="thumb"><img src="images/g1.jpg" alt="" width="70" class="img-responsive"></a>
-                                <div class="f-post-content">
-                                    <a href="#">
-                                        Post title goes here
-                                    </a>
-                                    <em>2 days ago</em>
-                                </div>
-                            </li>
-                            <li class="clearfix">
-                                <a href="#" class="thumb"><img src="images/g2.jpg" alt="" width="70" class="img-responsive"></a>
-                                <div class="f-post-content">
-                                    <a href="#">
-                                        Post title goes here
-                                    </a>
-                                    <em>2 days ago</em>
-                                </div>
-                            </li>
-                            <li class="clearfix">
-                                <a href="#" class="thumb"><img src="images/g3.jpg" alt="" width="70" class="img-responsive"></a>
-                                <div class="f-post-content">
-                                    <a href="#">
-                                        Post title goes here
-                                    </a>
-                                    <em>2 days ago</em>
-                                </div>
-                            </li>
+                    </div>                                  
+                      <div class="col-md-3 margin-btm-30 margin-top-37">
+                        <ul class="list-unstyled f-list">
+                            <li><a ui-sref="events">{{'MENU_EVENT' | translate}}</a></li>
+                             <li><a href="#">{{'MENU_NEWS' | translate}}</a></li>
+                             <li><a href="#">{{'MENU_PHOTO' | translate}}</a></li>
+                             <li><a href="#">{{'MENU_CONTACT' | translate}}</a></li>
                         </ul>
-                    </div>
-                    <div class="col-md-3 margin-btm-30">
-                        <h3>Contact us</h3>
-                        <ul class="list-inline footer-social">
-                            <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        </ul>
-                        <p class="phone"><i class="fa fa-phone"></i> +0034 43244 44</p>
-                        <p>Monday - Friday - 9:Am to 5 Pm</p>
-                        <p>Questions: <a href="#">support@domain.com</a></p>
-                    </div>
+                      </div> 
+                        <div class="col-md-3 margin-btm-30">
+                        <h3>{{'FOOTER_CONTACT_US' | translate}}</h3>
+                        <p><span><i class="fa fa-envelope"></i> contacto@ices-net.ch</span>
+</p>
+                    </div>     
                 </div>
             </div>
             <div class="footer-bottom">
                 <div class="container">
-                    <span>&copy; Copyright 2016. All Right Reserved. Design_mylife</span>
+                    <span>Hosting / Diseño Herr Frodo</span>
                 </div>
             </div>
         </footer>
@@ -192,7 +142,6 @@
         <script src="js/wow.min.js"></script>
         <script src="js/bootstrap-hover-dropdown.min.js"></script>
         <script src="js/jquery.stellar.min.js"></script>
-        <script src="flexslider/jquery.flexslider-min.js"></script>
         <script src="owl-carousel/owl.carousel.min.js"></script>
         <script src="js/custom.js"></script>
         <!--revolution slider plugins-->
