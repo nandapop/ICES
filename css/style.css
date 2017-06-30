@@ -132,8 +132,11 @@ blockquote {
     text-align: center;}  
 .title{
     font-size: 3rem;
-    color:#043975;} 
-    
+    color:#043975;}
+.subTitle{
+  font-size: 2.4rem;
+  color:#043975;}  
+
 /**preloader**/
 .js div#preloader {
   position: fixed;
