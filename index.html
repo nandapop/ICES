@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Education</title>
+        <title>ICES</title>
         <!-- Bootstrap -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/animate.css" rel="stylesheet">
@@ -15,6 +15,7 @@
         <link href="css/style.css" rel="stylesheet">
         <link href="css/tableStyle.css" rel="stylesheet">
         <link href="css/event.css" rel="stylesheet">
+        <link href="css/news.css" rel="stylesheet">
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -73,9 +74,9 @@
                             </ul>
                         </li>
                         <li><a ui-sref="events">{{'MENU_EVENT' | translate}}</a></li>
-                        <li><a href="#">{{'MENU_NEWS' | translate}}</a></li>
+                        <li><a ui-sref="news">{{'MENU_NEWS' | translate}}</a></li>
                         <li><a href="#">{{'MENU_PHOTO' | translate}}</a></li>
-                        <li><a href="#">{{'MENU_CONTACT' | translate}}</a></li>
+                        <li><a ui-sref="contact">{{'MENU_CONTACT' | translate}}</a></li>
                         <li class="search-toggle"><a href="javascript:void(0)"><i class="fa fa-search"></i></a>
                             <form class="search-form">
                                 <input type="text" class="form-control" placeholder="Search here...">
@@ -88,6 +89,17 @@
             </div><!--/.container -->
         </nav><!--/nav end -->
         <!--content ui view -->
+            <div id="preloader"></div>
+            <div class="page-breadcrumb">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                        <h2>{{settingsCtrl.title | translate}}</h2>
+                    </div>
+                </div>
+                </div>
+            </div>
+        <div class="space70"></div>
         <ui-view></ui-view>
         <!--footer start-->
         <footer class="footer" id="footer">
@@ -117,9 +129,9 @@
                       <div class="col-md-3 margin-btm-30 margin-top-37">
                         <ul class="list-unstyled f-list">
                             <li><a ui-sref="events">{{'MENU_EVENT' | translate}}</a></li>
-                             <li><a href="#">{{'MENU_NEWS' | translate}}</a></li>
-                             <li><a href="#">{{'MENU_PHOTO' | translate}}</a></li>
-                             <li><a href="#">{{'MENU_CONTACT' | translate}}</a></li>
+                            <li><a ui-sref="news">{{'MENU_NEWS' | translate}}</a></li>
+                            <li><a href="#">{{'MENU_PHOTO' | translate}}</a></li>
+                            <li><a ui-sref="contact">{{'MENU_CONTACT' | translate}}</a></li>
                         </ul>
                       </div> 
                         <div class="col-md-3 margin-btm-30">
