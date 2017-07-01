@@ -7,4 +7,5 @@ angular.module('ices').controller('settings', function ($translate) {
     }
 
     this.changeLang = changeLang;
+    this.title = 'MAIN_TITLE_INDEX';
 });

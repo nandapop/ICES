@@ -39,20 +39,20 @@ angular.module('ices').config(function($urlRouterProvider, $stateProvider) {
 //            controllerAs: "",
         })
         .state("news", {
-            url:'/',
-            templateUrl: "template/news.html"
+            url:'/news',
+            templateUrl: "templates/news.html"
 //            controller: "",
 //            controllerAs: "",
         })
         .state("photos", {
             url:'/',
-            templateUrl: "template/photos.html"
+            templateUrl: "templates/photos.html"
 //            controller: "",
 //            controllerAs: "",
         })
         .state("contact", {
-            url:'/',
-            templateUrl: "template/contact.html"
+            url:'/contact',
+            templateUrl: "templates/contact.html"
 //            controller: "",
 //            controllerAs: "",
         });
