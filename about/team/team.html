@@ -1,0 +1,37 @@
+<div class="row team-row">
+    <div class="col-lg-4 col-sm-6 team-col" ng-repeat="item in teamCtrl.items">
+        <div class="team-wrap">
+            <img ng-src="images/{{item.picture}}" class="img-responsive" alt="">
+            <h4>{{item.name | translate}}</h4>
+            <span>{{item.position | translate}}</span>
+            <p><a href="" ng-click="item.expanded = !item.expanded">{{item.expanded?'HIDE_BIO':'SHOW_BIO' | translate}}</a></p>
+            <p ng-if="item.expanded">{{item.bio | translate}}</p>
+            <ul class="list-inline">
+                <li>
+                    <a href="#" class="social-icon-sm si-border si-envelope">
+                        <i class="fa fa-envelope"></i>
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-icon-sm si-border si-facebook">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-icon-sm si-border si-twitter">
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-icon-sm si-border si-linkedin">
+                        <i class="fa fa-linkedin"></i>
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul><!--social-->
+        </div><!--team-wrap-->
+    </div><!--team col-->
+</div>

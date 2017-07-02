@@ -14,9 +14,9 @@ angular.module('ices').config(function($urlRouterProvider, $stateProvider) {
         })
         .state("about", {
             url:'/about',
-            templateUrl: "templates/about.html"
-//            controller: "",
-//            controllerAs: "",
+            templateUrl: "about/about.html",
+            controller: "about",
+            controllerAs: "aboutCtrl"
         })
         .state("studyIn", {
             url:'/studyIn',
