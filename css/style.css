@@ -629,7 +629,7 @@ Dropdown css
 
   .dropdown-menu > li > a {
     border-bottom-color: rgba(255, 255, 255, 0.1);
-    color: #eee !important;
+    color: #333 !important;
     padding: 8px 20px; }
     .dropdown-menu > li > a:hover {
       color: #fff;
