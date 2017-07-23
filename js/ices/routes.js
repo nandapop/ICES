@@ -40,9 +40,21 @@ angular.module('ices').config(function($urlRouterProvider, $stateProvider) {
         })
         .state("news", {
             url:'/news',
-            templateUrl: "templates/news.html"
+            templateUrl: "news/newsSection.html"
 //            controller: "",
 //            controllerAs: "",
+        })
+        .state("post_encuentro2017", {
+            url:'/post_encuentro2017',
+            templateUrl: "news/posts/encuentro2017.html"
+        })
+          .state("post_buzon", {
+            url:'/post_buzon',
+            templateUrl: "news/posts/buzonAcademico.html"
+        })
+        .state("post_papayapods", {
+            url:'/post_papayapods',
+            templateUrl: "news/posts/papayapods.html"
         })
         .state("photos", {
             url:'/',

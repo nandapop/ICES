@@ -1,0 +1,16 @@
+<div class="post">
+    <a href="{{newsItemCtrl.link}}">
+        <img ng-src="{{newsItemCtrl.image}}" alt="" class="img-responsive">
+    </a>
+    <h3><a href="{{newsItemCtrl.link}}">{{newsItemCtrl.title | translate}}</a></h3>
+    <ul class="list-inline">
+        <li><a href="#"><i class="fa fa-user"></i> Admin</a></li>
+        <li><a href="#"><i class="fa fa-comments"></i> 5 Comments</a></li>
+    </ul>
+    <p>
+        {{newsItemCtrl.descr | translate}}
+    </p>
+    <div class="text-right">
+        <a href="{{newsItemCtrl.link}}" class="btn btn-link">{{'CONTINUE' | translate}}</a>
+    </div>
+</div>
