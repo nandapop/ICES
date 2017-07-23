@@ -76,4 +76,8 @@ angular.module('ices').controller('news', function() {
             descr:'DESC_BERNA_2014'
         }
     ]
+
+    // TODO: Investigate why the facebook section
+    //       needs to be reloaded on route changes.
+    if(typeof FB !== 'undefined') { FB.XFBML.parse(); }
 });

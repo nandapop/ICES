@@ -1590,3 +1590,11 @@ si-border {
 }
 
 /**** End Social Icons ***/
+
+/**** News ***/
+.row.news-grid {
+  margin-left: -5px;
+  margin-top: -5px;
+}
+
+.
