@@ -68,3 +68,17 @@ float:right;
 clear:both;
 height:0;
 }
+.alignFotoLeft {
+    float: left;
+    margin-right: 10px;
+}
+.alignFotoRight {
+    float: right;
+    margin-right: 10px;
+}
+.setImage {
+    height: 200px;
+}
+.alingCenter {
+    text-align: center;
+}

@@ -56,6 +56,50 @@ angular.module('ices').config(function($urlRouterProvider, $stateProvider) {
             url:'/post_papayapods',
             templateUrl: "news/posts/papayapods.html"
         })
+        .state("post_trump", {
+            url:'/post_trump',
+            templateUrl: "news/posts/trump.html"
+        })
+        .state("post_encuentro2016", {
+            url:'/post_encuentro2016',
+            templateUrl: "news/posts/encuentro2016.html"
+        })
+        .state("post_chilenosExtranjeros", {
+            url:'/post_chilenosExtranjeros',
+            templateUrl: "news/posts/chilenosExtranjeros.html"
+        })
+        .state("post_avisoEncuentro", {
+            url:'/post_avisoEncuentro',
+            templateUrl: "news/posts/avisoEncuentro2016.html"
+        })
+        .state("post_chile_encuentro_global", {
+            url:'/post_chile_encuentro_global',
+            templateUrl: "news/posts/chileEncuentroGlobal.html"
+        })
+        .state("post_creacionIces", {
+            url:'/post_creacionIces',
+            templateUrl: "news/posts/creacionIces.html"
+        })
+        .state("post_puentes", {
+            url:'/post_puentes',
+            templateUrl: "news/posts/construyendoPuentes.html"
+        })
+        .state("post_chile_global", {
+            url:'/post_chile_global',
+            templateUrl: "news/posts/chileGlobal.html"
+        })
+        .state("post_eth_apoyo", {
+            url:'/post_eth_apoyo',
+            templateUrl: "news/posts/ethApoyo.html"
+        })
+        .state("post_embajador", {
+            url:'/post_embajador',
+            templateUrl: "news/posts/embajador.html"
+        })
+        .state("post_berna2014", {
+            url:'/post_berna2014',
+            templateUrl: "news/posts/berna.html"
+        })    
         .state("photos", {
             url:'/',
             templateUrl: "templates/photos.html"

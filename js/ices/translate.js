@@ -107,8 +107,7 @@ angular.module('ices').config(function($translateProvider) {
         'TITLE_BUZON': 'Buzón Académico y Universitario',
         'DESC_SUMMARY_BUZON': 'The «Buzón Universitario» of PL was created 7 years ago with the directives between 2008 and 2014: Julie Bauer (Suiza, UNI GE), José Parra ...',
         'TITLE_PAPAYAPODS': 'papayapods helps you to find a new home',
-        'DESC_SUMMARY_PAPAYAPODS': 'All of us have at some point of our lives rented an apartment after moving to a new city, this can be an stressful experience, ...', 
-        'TITLE_TRUMP': 'Our Director Dr. Rodrigo Polanco gives his vision on the recent election of Donald Trump in the United States',
+        'DESC_SUMMARY_PAPAYAPODS': 'All of us have at some point of our lives rented an apartment after moving to a new city, this can be an stressful experience, ...','TITLE_TRUMP': 'Our Director Dr. Rodrigo Polanco gives his vision on the recent election of Donald Trump in the United States',
         'DESC_SUMMARY_TRUMP': 'What does a Trump presidency mean for the developing world? After an 18-month campaign characterised by inward-looking nationalism and often racist vitriol, the idea that ...',
         'TITLE_ENCUENTRO_2016': 'Encuentro Ginebra 2016',
         'DESC_SUMMARY_ENCUENTRO_2016': 'El pasado 7 de mayo, en la Universidad de Ginebra, la Asociación de investigadores chilenos en Suiza (ICES) realizó su Encuentro 2016....',
@@ -131,7 +130,7 @@ angular.module('ices').config(function($translateProvider) {
         'TITLE_BERNA_2014': 'En Berna se realiza la primera reunión de la asociación',
         'DESC_BERNA_2014': 'Coincidiendo con el espíritu pratiótico de la temporada, el 18 de septiembre de 2014 se reunió parte de quienes conformarían la directiva de la asociación ...',
         'TITLE_ENCUENTRO_2017': 'Encuentro 2017 ICES en Berna',
-        'DESC_ENCUENTRO_2017':'El evento se llevará a cabo el Sábado 20 de Mayo del 2017 de 09:00 a 17:00 horas en el Casino Kursaal Bern, Kornhausstrasse 3, 3000 Bern...'
+        'DESC_ENCUENTRO_2017':'El evento se llevará a cabo el Sábado 20 de Mayo del 2017 de 09:00 a 17:00 horas en el Casino Kursaal Bern, Kornhausstrasse 3, 3000 Bern...' 
     });
 
     $translateProvider.translations('es', {
@@ -266,7 +265,6 @@ angular.module('ices').config(function($translateProvider) {
         'CONTINUE': 'Continuar',
         'TITLE_ENCUENTRO_2017': 'Encuentro 2017 ICES en Berna',
         'DESC_ENCUENTRO_2017':'El evento se llevará a cabo el Sábado 20 de Mayo del 2017 de 09:00 a 17:00 horas en el Casino Kursaal Bern, Kornhausstrasse 3, 3000 Bern...'
-
     });
 
     $translateProvider.determinePreferredLanguage();
