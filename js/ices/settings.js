@@ -1,6 +1,9 @@
 'use strict';
 
-angular.module('ices').controller('settings', function ($translate) {
+angular.module('ices').controller('settings', function ($translatePartialLoader,$translate) {
+
+    $translatePartialLoader.addPart('main');
+    $translate.refresh();
 
     function changeLang(langKey) {
         $translate.use(langKey);

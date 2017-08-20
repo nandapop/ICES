@@ -1,6 +1,10 @@
 'use strict';
 
-angular.module('ices').controller('about', function () {
+angular.module('ices').controller('about', function ($translatePartialLoader, $translate) {
+  
+    $translatePartialLoader.addPart('about');
+    $translate.refresh();
+
     this.team = [
         {
             name: 'NAME_PRESIDENT',    

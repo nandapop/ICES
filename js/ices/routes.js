@@ -20,23 +20,23 @@ angular.module('ices').config(function($urlRouterProvider, $stateProvider) {
         })
         .state("studyIn", {
             url:'/studyIn',
-            templateUrl: "templates/studyInSwiss.html"
-//            controller: "",
-//            controllerAs: "",
+            templateUrl: "templates/studyInSwiss.html",
+            controller: "studyIn",
+            controllerAs: "studyInCtrl",
         })
 
         .state("icesCommunity", {
             url:'/icesCommunity',
-            templateUrl: "templates/requirements.html"
-//            controller: "",
-//            controllerAs: "",
+            templateUrl: "templates/requirements.html",
+            controller: "icesCommunity",
+            controllerAs: "icesCommunityCtrl",
         })
 
         .state("events", {
             url:'/events',
-            templateUrl: "templates/event.html"
-//            controller: "",
-//            controllerAs: "",
+            templateUrl: "templates/event.html",
+            controller: "event",
+            controllerAs: "eventCtrl",
         })
         .state("news", {
             url:'/news',
