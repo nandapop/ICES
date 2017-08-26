@@ -1,6 +1,10 @@
 'use strict';
 
-angular.module('ices').controller('news', function() {
+angular.module('ices').controller('news', function ($translatePartialLoader, $translate) {
+
+    $translatePartialLoader.addPart('news');
+    $translate.refresh();
+
     this.news = [ 
           {
             title: 'TITLE_ENCUENTRO_2017',
