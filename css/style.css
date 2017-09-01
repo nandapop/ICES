@@ -57,6 +57,16 @@ blockquote {
   border-radius: 50px;
   width: 240px;}   
 
+.strong {
+  font-weight: bold;
+}
+.inlineBlock {
+  display: inline-block;
+}
+.bold {
+  font-style: italic;
+}
+
 /**spaces**/
 .space10 {
   height: 10px; }

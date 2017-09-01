@@ -52,7 +52,9 @@ angular.module('ices').config(function($urlRouterProvider, $stateProvider) {
         })
           .state("post_buzon", {
             url:'/post_buzon',
-            templateUrl: "news/posts/buzonAcademico.html"
+            templateUrl: "news/posts/buzonAcademico.html",
+            controller: "posts",
+            controllerAs: "postsCtrl"
         })
         .state("post_papayapods", {
             url:'/post_papayapods',
