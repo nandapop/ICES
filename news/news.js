@@ -2,7 +2,7 @@
 
 angular.module('ices').controller('news', function ($translatePartialLoader, $translate) {
 
-    $translatePartialLoader.addPart('news');
+    $translatePartialLoader.addPart('posts');
     $translate.refresh();
 
     this.news = [ 
