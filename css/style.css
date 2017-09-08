@@ -67,6 +67,9 @@ blockquote {
   font-style: italic;
 }
 
+.fontSize18px {
+  font-size: 18px;
+}
 /**spaces**/
 .space10 {
   height: 10px; }
@@ -151,7 +154,10 @@ blockquote {
     color:#043975;}
 .subTitle{
   font-size: 2.4rem;
-  color:#043975;}  
+  color:#043975;}
+.subTitleStatutes{
+  font-size: 2rem;
+  color:#043975;}    
 
 /**preloader**/
 .js div#preloader {

@@ -2,8 +2,8 @@
 
 angular.module('ices').config(function($translateProvider) {
     $translateProvider.translations('en', {
-        'MENU_HOME': 'HOME',
-        'MENU_ABOUT': 'ABOUT US',
+       /*  'MENU_HOME': 'HOME',
+       'MENU_ABOUT': 'ABOUT US',
         'MENU_MOTIVATION': 'Motivation',
         'MENU_GOAL': 'Objectives',
         'MENU_ORG': 'Structure',
@@ -27,7 +27,7 @@ angular.module('ices').config(function($translateProvider) {
         'TITLE_PPAL_GOAL': 'These are our main objectives',
         'TITLE_ORG': 'Structure',
         'TITLE_OUR_ORG': 'Our structure',
-        'TITLE_DIRECTIVE':'Directive',
+        'TITLE_DIRECTIVE':'Directive',*/
         'MAIN_TITLE_INDEX': 'ICES',
         'CONTACT_TEXT' : 'Please fill out the form and we’ll get back to you soon.',
         'NAME_CONTACT': 'Name',
@@ -36,7 +36,7 @@ angular.module('ices').config(function($translateProvider) {
         'MESSAGE_CONTACT': 'Message',
         'SUBMIT_CONTACT' : 'Send',
         'CAROUSEL_TEXT': 'ICES is constituted by researchers, students and professionals who work in Switzerland',
-        'CAROUSEL_TEXT2': 'ICES is interested in the Chilean-Swiss collaborative research',
+        'CAROUSEL_TEXT2': 'ICES is interested in the Chilean-Swiss collaborative research',/*
         'ABOUT_US': 'ICES (stands for the Spanish version of Chilean Researchers in Switzerland) is a non-profit association formed by a group of researchers, academics, students and professionals who develop their respective activities in Switzerland, interested in the collaboration between Chile and Switzerland in every field of knowledge and research.',
         'MOTIVATION': 'ICES seeks to contribute to the academic and professional collaboration between Chile and Switzerland. Based on our academic and professional experiences in Switzerland, we believe that there are many opportunities for scientific and professional collaboration between institutions of these two countries. We think that the academic, professional and even personal life of the Chilean researchers in Switzerland can profit from the advices and past experiences of people who are already working in this country. Our main motivation is to create the opportunities for Chilean researchers in Switzerland to contact each other, interchange experiences and explore new academic challenges together with Chilean and Swiss organizations. Also, we want to be an information platform in order to facilitate the exchange of Chilean students in Switzerland.',
         'GOAL': 'The objectives of our association can be divided in three main levels, going from the short-term in the first level to the long-term in the third:',
@@ -50,7 +50,7 @@ angular.module('ices').config(function($translateProvider) {
         'GOAL_LIST3_LEVEL2':'Show Chile in Switzerland as a valuable opportunity for research and collaboration.',
         'GOAL_LEVEL3': 'Level 3: Participate in the discussion for the scientific and academic development of Chile',
         'GOAL_LIST1_LEVEL3': 'Participate and collaborate with different associations and networks of Chilean researchers in Chile and abroad.',
-        'GOAL_LIST2_LEVEL3': 'Contribute from our experience to the development of policies for the reintegration of researchers and students returning to Chile. In particular, we would like to help students that are part of the Becas Chile program for post-graduate studies.',
+        'GOAL_LIST2_LEVEL3': 'Contribute from our experience to the development of policies for the reintegration of researchers and students returning to Chile. In particular, we would like to help students that are part of the Becas Chile program for post-graduate studies.',*/
         'STRUCTURE':'The organs of the association are:',
         'STRUCTURE_LIST1': 'The general assembly',
         'STRUCTURE_LIST2': 'The financial and administrative organ',

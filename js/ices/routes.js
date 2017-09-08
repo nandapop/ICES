@@ -58,51 +58,75 @@ angular.module('ices').config(function($urlRouterProvider, $stateProvider) {
         })
         .state("post_papayapods", {
             url:'/post_papayapods',
-            templateUrl: "news/posts/papayapods.html"
+            templateUrl: "news/posts/papayapods.html",
+            controller: "posts",
+            controllerAs: "postsCtrl"
         })
         .state("post_trump", {
             url:'/post_trump',
-            templateUrl: "news/posts/trump.html"
+            templateUrl: "news/posts/trump.html",
+            controller: "posts",
+            controllerAs: "postsCtrl"
         })
         .state("post_encuentro2016", {
             url:'/post_encuentro2016',
-            templateUrl: "news/posts/encuentro2016.html"
+            templateUrl: "news/posts/encuentro2016.html",
+            controller: "posts",
+            controllerAs: "postsCtrl"
         })
         .state("post_chilenosExtranjeros", {
             url:'/post_chilenosExtranjeros',
-            templateUrl: "news/posts/chilenosExtranjeros.html"
+            templateUrl: "news/posts/chilenosExtranjeros.html",
+            controller: "posts",
+            controllerAs: "postsCtrl"
         })
         .state("post_avisoEncuentro", {
             url:'/post_avisoEncuentro',
-            templateUrl: "news/posts/avisoEncuentro2016.html"
+            templateUrl: "news/posts/avisoEncuentro2016.html",
+            controller: "posts",
+            controllerAs: "postsCtrl"
         })
         .state("post_chile_encuentro_global", {
             url:'/post_chile_encuentro_global',
-            templateUrl: "news/posts/chileEncuentroGlobal.html"
+            templateUrl: "news/posts/chileEncuentroGlobal.html",
+            controller: "posts",
+            controllerAs: "postsCtrl"
         })
         .state("post_creacionIces", {
             url:'/post_creacionIces',
-            templateUrl: "news/posts/creacionIces.html"
+            templateUrl: "news/posts/creacionIces.html",
+            controller: "posts",
+            controllerAs: "postsCtrl"
         })
         .state("post_puentes", {
             url:'/post_puentes',
-            templateUrl: "news/posts/construyendoPuentes.html"
+            templateUrl: "news/posts/construyendoPuentes.html",
+            controller: "posts",
+            controllerAs: "postsCtrl"
         })
         .state("post_chile_global", {
             url:'/post_chile_global',
-            templateUrl: "news/posts/chileGlobal.html"
+            templateUrl: "news/posts/chileGlobal.html",
+            controller: "posts",
+            controllerAs: "postsCtrl"
         })
         .state("post_eth_apoyo", {
             url:'/post_eth_apoyo',
-            templateUrl: "news/posts/ethApoyo.html"
+            templateUrl: "news/posts/ethApoyo.html",
+            controller: "posts",
+            controllerAs: "postsCtrl"
         })
         .state("post_embajador", {
             url:'/post_embajador',
-            templateUrl: "news/posts/embajador.html"
+            templateUrl: "news/posts/embajador.html",
+            controller: "posts",
+            controllerAs: "postsCtrl"
         })
         .state("post_berna2014", {
             url:'/post_berna2014',
-            templateUrl: "news/posts/berna.html"
+            templateUrl: "news/posts/berna.html",
+            controller: "posts",
+            controllerAs: "postsCtrl"
         })    
         .state("photos", {
             url:'/',
