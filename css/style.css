@@ -63,6 +63,9 @@ blockquote {
 .inlineBlock {
   display: inline-block;
 }
+.padding20 {
+  padding: 20px;
+}
 .bold {
   font-style: italic;
 }

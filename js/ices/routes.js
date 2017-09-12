@@ -31,12 +31,17 @@ angular.module('ices').config(function($urlRouterProvider, $stateProvider) {
             controller: "icesCommunity",
             controllerAs: "icesCommunityCtrl",
         })
-
         .state("events", {
             url:'/events',
             templateUrl: "templates/event.html",
             controller: "event",
             controllerAs: "eventCtrl",
+        })
+        .state("interviews", {
+            url:'/interviews',
+            templateUrl: "templates/interviews.html",
+            controller: "interviews",
+            controllerAs: "interviewsCtrl",
         })
         .state("news", {
             url:'/news',
